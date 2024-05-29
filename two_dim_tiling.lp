@@ -16,17 +16,19 @@ h3by1tiles(N) :- #count{R, C: h(R, C)} = N.
 % GENERATE %
 %%%%%%%%%%%%
 
-0{h(1..nBoardSize, 1..nBoardSize - 2)}n3by1tiles.
-{v(1..nBoardSize - 2, 1..nBoardSize)} = n3by1tiles - N :- h3by1tiles(N).
-{s(1..nBoardSize, 1..nBoardSize)} = 1.
+{h(1..nBoardSize, 1..nBoardSize - 2); v(1..nBoardSize - 2, 1..nBoardSize)} = n3by1tiles.
+{s(1..nBoardSize, 1..nBoardSize)} = n1by1tiles.
 
 %%%%%%%%
 % TEST %
 %%%%%%%%
 
-:- s(R, C), h(R, C + 0..2).
-:- s(R, C), v(R + 0..2, C).
-:- v(R + 0..2, C), h(R, C + 0..2).
+:- h(R, C), h(R, C + (1..2)).
+:- v(R, C), v(R + (1..2), C).
+:- h(R, C), v(R - (0..2), C + (0..2)).
+
+:- s(R, C), h(R, C - (0..2)).
+:- s(R, C), v(R - (0..2), C).
 
 %%%%%%%%%%
 % OUTPUT %

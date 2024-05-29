@@ -24,7 +24,9 @@ h3by1tiles(N) :- #count{R, C: h(R, C)} = N.
 % TEST %
 %%%%%%%%
 
-:- s(R, C), h(R, C + 0..2), v(R + 0..2, C).
+:- s(R, C), h(R, C + 0..2).
+:- s(R, C), v(R + 0..2, C).
+:- v(R + 0..2, C), h(R, C + 0..2).
 
 %%%%%%%%%%
 % OUTPUT %

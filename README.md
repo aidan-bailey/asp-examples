@@ -30,3 +30,12 @@ Place eight queens on a chessboard so that no two queens threaten each other.
 # two_dim_tiling.lp
 
 Cover a chessboard by 21 3-by-1 tiles and 1 1-by-1 tile.
+
+# satisfiability.lp
+
+A formula in conjunctive normal form consists of a set of clauses of the form
+
+$$\{ l_1,\ldots, l_n\}$$
+
+where $l_i$ is an atom or a negated atom (for every $i=1,\ldots,n$). 
+The satisfiability problem consists in finding a set of atoms $x$ such that for every clause $\{ l_1,\ldots, l_n\}$, there is some $i=1,\ldots,n$ s.t.\ $l_i$ is a positive atom and occurs in  $x$ or $l_i$ is a negated atom $\neg b$ and $b$ does not occur in $x$.

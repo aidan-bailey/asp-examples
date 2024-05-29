@@ -44,4 +44,6 @@ The satisfiability problem consists in finding a set of atoms $x$ such that for 
 
 # Optimising Solutions
 
-TODO
+## smallest_vertex_cover.lp
+
+A vertex cover of a graph is a set of vertices such that every edge of the graph has at least one point in the set. Write a program that has as answer sets all the vertex covers of size n.\pause

@@ -22,3 +22,7 @@ A clique in a graph $(V,E)$ is a set $C\subseteq V$ s.t. for every $v_{1},v_{2}\
 # vertex_cover.lp
 
 A vertex cover of a graph is a set of vertices such that every edge of the graph has at least one point in the set. Write a program that has as answer sets all the vertex covers of size $n$.
+
+# threatening_queens.lp
+
+Place eight queens on a chessboard so that no two queens threaten each other.

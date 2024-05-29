@@ -26,3 +26,7 @@ A vertex cover of a graph is a set of vertices such that every edge of the graph
 # threatening_queens.lp
 
 Place eight queens on a chessboard so that no two queens threaten each other.
+
+# two_dim_tiling.lp
+
+Cover a chessboard by 21 3-by-1 tiles and 1 1-by-1 tile.

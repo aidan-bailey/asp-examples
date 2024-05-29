@@ -7,7 +7,7 @@ Analyse a logic circuit for all possible valid signals.
 
 # grain_checker.lp
 
-Compute the number of squares contains equal to or over a number of grains.
+Compute the number of squares which contain equal to or over a number of grains.
 
 # seating_arrangements.lp
 

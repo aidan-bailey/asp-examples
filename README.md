@@ -47,3 +47,9 @@ The satisfiability problem consists in finding a set of atoms $x$ such that for 
 ## smallest_vertex_cover.lp
 
 A vertex cover of a graph is a set of vertices such that every edge of the graph has at least one point in the set. Write a program that has as answer sets all the vertex covers of size n.\pause
+
+## knapsack.lp
+
+We are given a set of items with a value and weights. 
+
+Which items can we pack so that the weight stays under a given number and the total value is as large as possible?

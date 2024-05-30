@@ -14,7 +14,7 @@ disjoint(S1, S2) :- set(S1), set(S2), #count{V: in(S1, V), in(S2, V)} = 0, S1 !=
 
 {pairwisedisjoint(S): set(S)}.
 
-:- pairwisedisjoint(S1), pairwisedisjoint(S2), S2 != S1, not disjoint(S1, S2).
+S1 = S2 :- pairwisedisjoint(S1), pairwisedisjoint(S2), not disjoint(S1, S2).
 
 setCount(N) :- #count{S: pairwisedisjoint(S)} = N.
 

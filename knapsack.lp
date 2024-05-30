@@ -10,7 +10,8 @@ netweight(N) :-  #sum{W: weight(I, W), pack(I)} = N.
 
 netvalue(N) :- #sum{V: value(I, V), pack(I)} = N.
 
+#maximize{N: netvalue(N)}.
+
 #show pack/1.
 #show netweight/1.
 #show netvalue/1.
-#maximize{N: netvalue(N)}.

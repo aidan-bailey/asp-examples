@@ -53,3 +53,7 @@ A vertex cover of a graph is a set of vertices such that every edge of the graph
 We are given a set of items with a value and weights. 
 
 Which items can we pack so that the weight stays under a given number and the total value is as large as possible?
+
+## set_packing.lp
+
+List of $n$ sets $S_1,\ldots,S_n$, find the largest number of sets that are pairwise disjoint (i.e.\ $S_i\cap S_j=\emptyset$).

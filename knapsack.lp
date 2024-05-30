@@ -5,13 +5,12 @@ value(a, 4; b, 2; c, 10; d, 2; e, 1).
 
 {pack(I): item(I)}.
 
-netweight(N) :-  #sum{W: weight(I, W), pack(I)} = N.
+netweight(N) :-  #sum{W, I: weight(I, W), pack(I)} = N.
 :- netweight(N), N > maxweight.
 
-netvalue(N) :- #sum{V: value(I, V), pack(I)} = N.
+netvalue(N) :- #sum{V, I: value(I, V), pack(I)} = N.
 
 #maximize{N: netvalue(N)}.
 
 #show pack/1.
-#show netweight/1.
 #show netvalue/1.
